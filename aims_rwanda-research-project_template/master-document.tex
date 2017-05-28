@@ -1,0 +1,228 @@
+%-----------------------------------------------------------------------------
+% Template for AIMS Rwanda Structured Masters Research Project
+%
+% The fonts, linespacing, numbering, page styles, order
+% of  Title/Abstract/TOC/Body/{Appendices}/Acknowledgements/References 
+% are prescribed as the AIMS house style.
+%
+% Do not change them or add to it without getting approval first.
+% Essays are not accepted if they do not follow house style.
+% This is in preparation for your Masters/PhD where the university
+% will be much more strict on the house style.
+%
+\documentclass{aimsessay}
+\usepackage[utf8]{inputenc}
+\usepackage[round]{natbib}
+%
+%-----------------------------------------------------------------------------
+% To use external packages for specific needs, 
+% get approval before adding them here (they
+% should not override general AIMS house style and layout).
+%
+% Examples:
+%
+% For Arabic
+%\usepackage{arabtex}
+%\usepackage{utf8}
+
+
+%\setcode{utf8}
+% For tables:
+\usepackage{booktabs} % \toprule, \midrule, \bottomrule
+\usepackage{array}    % \newcolumntype
+% 
+% For figures:
+\usepackage[below]{placeins} % use \FloatBarrier in the body
+% \usepackage{float}  %"H" placement spec, for **really here** (i.e. not float)
+\usepackage{caption} %many figures in one figure (note subfigure and subfig are deprecated)
+\usepackage{subcaption} %many figures in one figure (note subfigure and subfig are deprecated)
+%
+% For code and algorithms
+\usepackage{moreverb}   % \verbatimtabinput
+% For links and hyper references
+\usepackage{hyperref}
+\urlstyle{same}
+% \usepackage{listings} % more flexible and complicated 
+                        % than moreverb and algorithm
+% 
+% Others
+% \usepackage[all]{xy} 
+ \usepackage{sagetex}
+% \usepackage{siunitx} % to typeset numbers, units, align decimals in tables.
+% \usepackage{dcolumn} % less flexible but maybe faster than siunitx above.
+% \usepackage{mathtools} % More maths, e.g. \mathclap.
+\usepackage{epstopdf}
+\usepackage{psfrag}
+\usepackage{graphics}% Others may be landscape, longtable, algorithm, algorithmic, etc.
+\usepackage{lineno} % This package together with lineno.sty numbers every line. Makes it easy for edditing.
+
+% Numbers lines
+\linenumbers
+% 
+% ----------------------------------------------------------------------------
+% An AIMS Essay can use the sectioning commands "\chapter", "\section",
+% "\subsection". No "\subsubsection", "\paragraph", etc. They are disabled.
+% 
+% For Theorems and such, use the environments defined here:
+% \begin{thm}...\end{thm} (or "lem", "defn", etc)
+% 
+% We put the number to the left of the Theorem heading.
+\swapnumbers 
+% 
+% Theorems are in italics.
+\theoremstyle{plain}
+\newtheorem{thm}[subsection]{Theorem}
+%
+% Rest is not in italics.
+\theoremstyle{definition} 
+\newtheorem{lem}[subsection]{Lemma}
+\newtheorem{cor}[subsection]{Corollary}
+\newtheorem{conj}[subsection]{Conjecture}
+\newtheorem{pro}[subsection]{Proposition}
+\newtheorem{exa}[subsection]{Example}
+\newtheorem{defn}[subsection]{Definition}
+\newtheorem{rem}[subsection]{Remark}
+% 
+% If you have no theorems, but a lot of equations, maybe the
+% following two lines are good. Beware of corresponding Equation
+% and Example numbers though! Number equations by sections.
+% 
+\numberwithin{equation}{section}
+%
+%-----------------------------------------------------------------------------
+% s are usually written in English, with a version in your
+% mother tongue underneath.
+%
+% French, Twi, Arabic, Malagasy, etc. students use normal LaTeX
+% for special characters, for example \'{e}
+%
+% Amharic students use LibreOffice to write Amharic,
+% export and include a figure.
+%
+%\begin{RLtext}    
+%Here is where the arabic text goes.
+%You can just type it with an arabic keyboard
+%\end{RLtext}\\
+%-----------------------------------------------------------------------------
+ 
+% Your own command shortcuts can go here
+% keep them clearly separate from other sections of the preamble
+% It is good style to have only a few of these so that
+% we can read one another's code. If you have too many, 
+% then your code does not compile in someone else's template easily,
+% and it makes it harder to read. These definitions are only
+% meant for very often-used commands to save typing; Examples:
+%
+%\newcommand {\be}{\begin{equation}}
+%\newcommand {\ee}{\end{equation}}
+%\newcommand {\C}{\mathbb{C}} % Complex
+%\newcommand {\Z}{\mathbb{Z}} % Integers
+%\newcommand {\R}{\mathbb{R}} % Real
+%\DeclareMathOperator{\sech}{sech} % declaring new math operators like \sin.
+%  
+%-----------------------------------------------------------------------------
+% Title & Author
+% On this page you must have NO full-word capitalizations, bold, or colour. 
+% All AIMS essays per year have the same title page.
+% In English your family name is written last, i.e. Firstname LASTNAME
+% English Capitalization, not as in some Francophone countries where
+% you write LASTNAME, Firstname.
+% Put your AIMS email address only please, for consistency,
+% not gmail or some other webmail address.
+\title{The Title}
+% Your name must be in CAPITAL with no comma, 
+% and the Family name comes last.
+\author{By\\ [1cm]
+Alice Irankunda  (alice.irankunda@aims.ac.rw)\\
+% Igbo, French students, put your special characters above.
+% Arabic students can add their name in Arabic letters below, 
+% after the english one
+% Uncomment the next four lines and edit the name
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                  
+%\begin{RLtext}    
+%سشمششة شمثهنعة
+%\end{RLtext}\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Amharic students speak to Jan about how to add your name in your own alphabet.
+% Everything here is prescribed; do not enter bold or ALL CAPS here,
+% it will not be accepted.
+%African Institute for Mathematical Sciences (AIMS) - Ghana\\
+% Example1
+ Supervised by Dr.Yabebal FANTAYE 
+% University of Stellenbosch, South Africa
+% Example2
+% Supervised by Doctor Ingrid Rewitzky
+% University of Stellenbosch, South Africa
+%{\small Supervised by: Title Firstname Lastname}\\
+%{\small Institute of Supervisor, Country}%
+% Don't put the department, it becomes too long.
+}
+\date{{\small June 2017}\\ [0.5cm]
+  {\scriptsize\it AN ESSAY PRESENTED TO AIMS RWANDA IN PARTIAL FULFILMENT OF THE REQUIREMENTS FOR THE AWARD OF MASTER OF SCIENCE IN MATHEMATICAL SCIENCES}\\%
+  \vspace{3cm}{\includegraphics[scale=.3]{images/aimsrw_logo.png}}}
+%-------------------------------------------------------------------------
+\begin{document}
+%\selectlanguage{english}
+\pagestyle{empty}
+\maketitle
+% All other files are included via \input. 
+% To compile in texmaker while viewing any of those
+% without having to switch back, use
+%   Options > Define Current Document as 'Master Document'
+% To not have to close a PDF, remove viewpdf from quickbuild 
+% and open the PDF (once) manually: it will auto-refresh or with control-r
+% 
+%-------------------------------------------------------------------------
+% The abstract is the first thing we want to see. No acknowledgements or 
+% dedications here. Fetch the abstract from a separate file.
+% Please write it in English and in your mother tongue.
+% An abstract should be less than half a page, so that both abstracts 
+% (that is both languages) fit onto one page.
+% We number roman numerals until the main body
+\pagenumbering{roman}
+%-----------------------------------------------------------------------------
+% See the acknowledgement.tex file and follow the instructions there.
+%\input{acknowledgement}
+\input{abstract}
+% Don't go typing out the contents.
+\tableofcontents
+\newpage
+% We switch to arabic numerals here where your page count starts
+% Essays must be 35 pages long *starting here* and up to and including
+% the conclcusion. It does not include the acknowledgements or references.
+% 
+% Figures may differ between topics, but they are not there
+% to fill the pages -- they must add meaning.
+% In general most figures should be 0.8 times the width of the page
+% (perhaps wider in total when two or three columns of figures)
+% See the example in chapter one for defining that. Be *consistent*
+% in your presentation of information.
+\pagenumbering{arabic}
+\pagestyle{myheadings}
+%-----------------------------------------------------------------------------
+% Each chapter goes in a separate file
+% Chapter titles are just examples
+% Always have a question
+% Note the Case Pattern used at AIMS
+\input{chapter1} 
+\input{chapter2}  
+\input{chapter3}         
+\input{chapter4} 
+
+\input{chapter5} 
+% Acknowledgements and References are not counted.
+%-----------------------------------------------------------------------------
+% Note the errata page is not for now, it is for use during the examination.
+% Not that you're going to have any errata.
+%-----------------------------------------------------------------------------
+% THE BIBLIOGRAPHY 
+% Bibliography styles define how the bibliography is 
+% listed and formatted. This is part of the AIMS house
+% style and is only changed under exceptional circumstances
+\renewcommand{\bibname}{References}
+\nocite{*}
+\bibliographystyle{plainnat}
+\bibliography{references}
+\addcontentsline{toc}{chapter}{References}
+%-----------------------------------------------------------------------------
+\end{document}

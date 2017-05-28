@@ -1,0 +1,56 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Baluja et~al.(2000)Baluja, Mittal, and Sukthankar]{baluja2000applying}
+Shumeet Baluja, Vibhu~O Mittal, and Rahul Sukthankar.
+\newblock Applying machine learning for high-performance named-entity
+  extraction.
+\newblock \emph{Computational Intelligence}, 16\penalty0 (4):\penalty0
+  586--595, 2000.
+
+\bibitem[Califf and Mooney(2003)]{califf2003bottom}
+Mary~Elaine Califf and Raymond~J Mooney.
+\newblock Bottom-up relational learning of pattern matching rules for
+  information extraction.
+\newblock \emph{Journal of Machine Learning Research}, 4\penalty0
+  (Jun):\penalty0 177--210, 2003.
+
+\bibitem[Dy and Brodley(2004)]{dy2004feature}
+Jennifer~G Dy and Carla~E Brodley.
+\newblock Feature selection for unsupervised learning.
+\newblock \emph{Journal of machine learning research}, 5\penalty0
+  (Aug):\penalty0 845--889, 2004.
+
+\bibitem[Manning(2012)]{manning2012information}
+Christopher Manning.
+\newblock Information extraction and named entity recognition, 2012.
+
+\bibitem[Manning et~al.(2008)Manning, Raghavan, and
+  Sch{\"u}tze]{manning2008text}
+Christopher~D Manning, Prabhakar Raghavan, and Hinrich Sch{\"u}tze.
+\newblock Text classification and naive bayes.
+\newblock \emph{Introduction to information retrieval}, 1:\penalty0 6, 2008.
+
+\bibitem[Palmer and Hearst(1994)]{palmer1994adaptive}
+David~D Palmer and Marti~A Hearst.
+\newblock Adaptive sentence boundary disambiguation.
+\newblock In \emph{Proceedings of the fourth conference on Applied natural
+  language processing}, pages 78--83. Association for Computational
+  Linguistics, 1994.
+
+\bibitem[Patwardhan and Riloff(2007)]{patwardhan2007effective}
+Siddharth Patwardhan and Ellen Riloff.
+\newblock Effective information extraction with semantic affinity patterns and
+  relevant regions.
+\newblock In \emph{EMNLP-CoNLL}, volume~7, pages 717--727, 2007.
+
+\bibitem[Sharnagat(2014)]{sharnagat2014named}
+Rahul Sharnagat.
+\newblock Named entity recognition: A literature survey.
+\newblock \emph{Center For Indian Language Technology}, 2014.
+
+\end{thebibliography}

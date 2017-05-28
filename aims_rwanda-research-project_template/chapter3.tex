@@ -1,0 +1,231 @@
+\chapter{Research Methodology}
+%\chapter{Research methodology}
+\section{Data and tools}
+World wide non governmental organizations publish some of their reports on their official websites.  Web scrapping is one of the ways to extract data from website to the local machines. We downloaded the reports about appeals in pdf format from IFRC website. 
+ We used R-scripts for web scraping form our co-supervisor professor Xavier. 
+ 
+ 
+We downloaded 1262 reports which have been submitted between $ 1^{st}$ January 2015 and $31^{st}$ December 2016. To differentiate the reports, each report has  a report Id but different reports can refer to the same appeal Id.
+As an international organization which insights on the largest humanitarian  activities in the world, IFRC reports we have talk about disasters and cash transfer program.
+Cash Transfer Program (CTP) describes the money used by IFRC to buy food, shelter, etc.
+\section{Data Analysis and Filtering}
+Portable document format (PDF) has content which can not be extracted and manipulated  easily. The data we have has to be changed into another format in order to pull the information we need. We managed to transform 1260 reports.  Our folder has the 1260 $ txt $ files which is considered as dataset. For analysing the data, we used  python programming language.
+
+Our data reported on different areas of the World such as continents, countries and cities. For example "Europe IB23102015 23Oct2015.txt" covers European continent , "Afghanistan MDRAF003 05Nov2015.txt" and  "Japan 0 16Apr2016.txt" reported  on specific countries and  "Port au Prince country cluster 0 04Oct2016.txt" reported on the most popular city of Haiti.
+-
+\section{Supervised vs Unsupervised  Machine Learning}
+\begin{itemize}
+\item \textbf{Supervised} is a machine learning part which deals with "labelled data",  data are categorized and classified. We have a csv document which summarize the appeals what we have. The shape of this document is 25 columns and 3997 rows. The "CTP" feature indicate if the appeal is classified as a Cash
+Transfer Program document  or not. Among 3997 appeals, 404 are CTP. 
+
+\item \textbf{Unsupervised} can be defined as a way machine learning processes ”unlabelled data”.
+the data are unstructured, uncategorised and unclassified. The reports we have are good example of unlabelled data.
+\begin{itemize}
+\item clustering is a technique for analysing data by identifying hidden groups in a data set. The hidden groups helps the machine to  classify them data into small groups called "cluster" based on similarities or relationship found in data \citep{dy2004feature}.
+\end{itemize}
+Unsupervised Machine Learning is very important, the analysis of data require the machine to use its brain Supervised learning.
+\section{NLP Corpus}
+%Corpus is a set of large data which are structured and                                                                                                                                                                                                                   
+%\section{CORPUS}
+Corpus is a set of large data which are semi-structured.  To extract entities from corpus is simple than to deal with unstructured data. To get the corpus we filtered the data by using unicode of utf-8.
+
+To get compatible data, we have to filter using the Unicode provides canonical and compatible equivalence.
+
+
+\textbf{Regular Expressions}: in Python, regular expression has operations and modules like "re.py" as so on. they are used to manipulate characters in strings. regular expressions use a backslash $(" \backslash  ")$  to indicate a special form without invoking the meaning of the special form. There are many regular expressions functions but some of what we used the most are :
+\begin{itemize}
+\item re.split(): this function split par pattern and return the list of string.
+\item re.search(): it returns match objects.
+\item the match object ".end()": in a search string, it returns the end position of the match.
+\item the match object: in a search string, it returns the start position of the match.
+\end{itemize}
+
+\textbf{Python string Strip() method}: strip method helped us to remove unwanted characters from the beginning and end of the string. to indicate the position of the character to be stripped we use left(l.strip()) which removes the character at the beginning of a string or right(r.strip()) to remove the character at the end of the string.
+
+\textbf{ASCII} stands for American Standard Code for Information Interchange. it is uses numbers to represent text by using 128 characters. Computer uses ASCII exist within unicode for storing texts easily. All  ASCII uses unicode. ASCII characters are used to send and receive the e-mails, for text files and data conversions. 
+
+
+\begin{itemize}
+\item  ASCII-encoder: transform text to numbers.
+\item  ASCII-decoder: transform numbers to text.
+\end{itemize}
+\newpage
+\begin{figure}[hbtp]
+\caption{ASCII TABLE}
+\centering
+\includegraphics[scale=.5]{images/ASCII.png}\label{ASCII}
+\end{figure}
+\end{itemize}
+%\end{itemize}
+
+Figure \ref{ASCII} demonstrates Unicode  standard. It provides  a unique number to each character composing a text regardless the language, program  or platform.
+UTF stands for Unicode Transformation Format. Unicode characters are set into binary values 0 and 1. UTF-8 for encoding  8 bytes, UTF-16 for encoding 16 bytes and UTF-32 which is a standard for encoding 32-bytes are three current standards.
+For our corpus we used UTF-8.
+
+After getting semi-structured documents, we removed the StopWords which are defined as unnecessary words for extraction of entities from corpus.
+
+Normally the StopWords return vast amount of unwanted information. Some example of English Stop Words: almost, are, or,  details, during, upon and so on.
+
+Now we can check how for all of 1260 documents and count the Stop Words to be removed from vocabularies of corpus. We trained corpus by nltk package called FreqDist which uses  frequency distribution of each word occurs in corpus, then the module of nltk technique called "nltk.corpus.PlaintextCorpusReader" helped us to get total 58104 stop words over the whole  7796263  vocabularies.
+
+\section{Extraction of Entities }
+
+To extract entities we used default dictionary built in collection package of nltk. Our dataset now is a folder containing 1260 corpus files, we  used nltk chruncker to get sets of sentences of corpus. let have a look for our sample document the way sentences are split. 
+\begin{figure}[hbtp]
+\caption{Set of sentences}
+\centering
+\includegraphics[scale=0.4]{images/corpus.png}\label{Set of sentences}
+\end{figure}
+
+
+Figure \ref{Set of sentences} shows the 45 first lines of the sample document. each each line is ended by  $'\backslash n'$. 
+
+\section{Twenty Five First Lines Dataset \label{top}}
+
+From the analysis of IFRC pdf reports, most of them have a small table on the top. this table gives the image of what the report is talking about. This table summarizes what the document is talking about. For example the total amount of money spent in recovering a disease, the number of people who participated in a given activity, the location and so on.
+
+While we were transforming the pdf data into txt format, this table occupied almost 25 first lines. Due to the limited time of the research, We decided to split those twenty five first lines of each document. the collection of those first twenty five documents has been considered as our new corpus.
+
+Now  we can use  one of the algorithms to extract entities and for classification.
+
+\section{Stanford Named Entities Recognition}
+
+The data to be trained is unlabelled. Named Entities Recognizer labels the data to be extracted easily. it recognises sequence of words and its classification is mainly to name of persons, localization and organization.
+
+Stanford Named Entities Recognition is an extractor implemented in java. It takes the sequence of words and label them 
+Stanford named entities recognition is  a able to identify correctly the named recogniser which labels sequences of words in a text. The next step is to split the sentences into set of words called tokens. By using the Stanford NER tokenizer  where token can be tagged. 
+
+\begin{itemize} 
+\item \textbf{Stanford NER Tagger} is a package which has modules for classifying tokens with the taggs. A tagg can be defined as one of classes of significant words like nouns, adjectives etc. we used the package Stanford POS Tagger to classify the words. 
+\item \textbf{Stanford NER Models} are many Stanford has different models such as "stanford-corenlp-full-2016-10-31", "stanford-ner-2014-01-04" which is the version we used. 
+
+\item \textbf{Stanford Classifier} is a package which classify the entities into defined categories. It has four specific classes such as  "Locations",  "Persons",  "Organizations" and    "Others".
+\end{itemize}
+
+We specified the named entities that we wanted to extract. We classified them into the four categories by Stanford classifier.  The last category called "others" combined all numerical entities such as time, amount of money, number of people, percentage, etc. 
+
+The reports from our corps are order by appeal numbers, the entities are in classified by nltk algorithm. 
+
+
+
+\begin{figure}[hbtp]
+\caption{IFRC entities from Stanford NER}
+\centering\includegraphics[scale =.45]{images/stanford.png} \label{stanford}
+\end{figure}
+From Figure \ref{stanford},  Consider the for the report "-Global MAA00029 21Jun2016.txt", locations row  shows that the report covered Syria,Irak, Afganistan, Libia,Ukraine, Yemen,etc.
+The extraction of entities separates clearly the categories.
+\section{Natural Language ToolKit (NLTK)}
+Natural language toolkit is one of the algorithm to extract named  entities. It has different modules which are used to process the data alongside the extraction.
+NLTK chunkparser is a one of nltk module  which uses Regular expressions. NLTK tokenize which splits the sentences into small units called tokens. This module helps the NLTK tagger to identify words independently. 
+
+Generally NLTK classify the entities into four categories which are known as Location, Organization, Persons and Others. 
+
+\begin{figure}[hbtp]
+\caption{IFRC entities from NLTK}
+\centering
+\includegraphics[scale=.45]{images/nltkalgo.png}\label{nltkalgo}
+\end{figure}
+
+From Figure \ref{nltkalgo}, Consider organizations extracted from the report "-Global-MAA00021 02 Jun 2015.txt", NLTK entities classifier was able to extract DRR, HFAR, WCDRR, HFAR2, UNISDR, etc. The classifier uses nltk tagger and default dictionary which help it to identify the names, verbs and adjectives.
+
+\section{Polyglot Named classifier}
+
+Compared to previous entities extractor, Polyglot has only three categories which are "Persons", "Locations" and "Organizations". For nltk, any entity which is classified into those three categories is not considered as named.
+
+\begin{figure}[hbtp]
+\caption{IFRC entities from Polyglot}
+\centering
+\includegraphics[scale=.45]{images/polyglot.png}\label{polyglot}
+\end{figure}
+
+
+Let us take an example report "-Global-MAA000029 21 Jun 2016.txt" from Figure \ref{polyglot}, the entities which are classified as "Persons" Jaime, Sepulveda and  Christoper Murray.
+
+\section{Sample Files} 
+The type of data we have can be considered into two different ways. There are some reports which are classified as CTP documents. This documents cover the overview of how IFRC money was invested in humanitarian activities.
+
+Non CTP reports are focused on other activities which didnt require IFRC to invest money. 
+
+The next step is to take example report document for CTP and Non-CTP to have a comparison on the extracted entities.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%\section{Entities Recognition and Classification}
+%%\newpage
+%\begin{figure}
+%        \begin{subfigure}{0.5\textwidth}
+%         \caption{Organizations sample}
+%                \includegraphics[width=\textwidth]{images/organizations.png}
+%                \label{Organizations}
+%        \end{subfigure}%
+%        \begin{subfigure}{0.5\textwidth}
+%        \caption{Location sample}
+%                \includegraphics[width=\textwidth]{images/location.png}
+%                \label{Location}
+%        \end{subfigure}\\
+%        \begin{subfigure}{0.5\textwidth}
+%         \caption{Person's names}
+%                \includegraphics[width=\textwidth]{images/person.png}
+%                \label{Persons}
+%        \end{subfigure}%
+%        \begin{subfigure}{0.5\textwidth}
+%        \caption{Others category}
+%                \includegraphics[width=\textwidth]{images/others.png}
+%                \label{Others}
+%        \end{subfigure}
+%\end{figure}
+%
+%\section{Entities linking}
+%Natural languages used by human are inherently noisy, spelling mistakes and ungrammatical mistakes. Machine learning algorithms are able to handle linguistic problems.  
+%\section{Context}
+%\section{Bag of words}
+
+%
+%
+%The frequency of a word is calculated based on summation of times the word appeared into a document. The frequency is used in words classifiers.
+%
+%\section{Mathematics behind entities extraction}
+%\section{Supervised Classification}
+%They are key points to classify the data which are supervised:
+%
+%\section{Corpus from Natural Languague Tolkit}
+
+%The check-up on the entities extracted from the text can be done by comparing what has been extracted by hands and what the algorithm give us as results.
+
+%The check-up on the entities extracted from the text can be done by comparing what has been extracted by hands and what the algorithm give us as results.
