@@ -1,5 +1,5 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction of the Research}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Literature review}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Literature review }{}% 2
 \BOOKMARK [1][-]{section.2.1}{ Parse Tree}{chapter.2}% 3
 \BOOKMARK [1][-]{section.2.2}{ Named Entity Recognation and Classification NERC}{chapter.2}% 4
 \BOOKMARK [1][-]{section.2.3}{Hidden Markov Model}{chapter.2}% 5
@@ -13,15 +13,16 @@
 \BOOKMARK [1][-]{section.3.2}{Data Analysis and Filtering}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.3}{Supervised vs Unsupervised Machine Learning}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.4}{NLP Corpus}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.5}{Extraction of Entities }{chapter.3}% 16
-\BOOKMARK [1][-]{section.3.6}{Twenty Five First Lines Dataset }{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.7}{Stanford Named Entities Recognition}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.8}{Natural Language ToolKit \(NLTK\)}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.9}{Polyglot Named classifier}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.10}{Sample Files}{chapter.3}% 21
-\BOOKMARK [0][-]{chapter.4}{Results Discussion and Testing}{}% 22
-\BOOKMARK [1][-]{section.4.1}{General Overview}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.2}{Case Study Results}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.3}{Testing}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{Conclusion and Future work}{}% 26
-\BOOKMARK [0][-]{chapter*.17}{References}{}% 27
+\BOOKMARK [1][-]{section.3.5}{Modules and packages}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.6}{Extraction of Entities }{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.7}{Top Section Dataset }{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.8}{Stanford Named Entities Recognition}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.9}{Natural Language ToolKit \(NLTK\)}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.10}{Polyglot Named classifier}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.11}{Sample Files}{chapter.3}% 22
+\BOOKMARK [0][-]{chapter.4}{Results Discussion and Testing}{}% 23
+\BOOKMARK [1][-]{section.4.1}{General Overview}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.2}{Case Study Results}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.3}{Testing}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Conclusion and Future work}{}% 27
+\BOOKMARK [0][-]{chapter*.17}{References}{}% 28

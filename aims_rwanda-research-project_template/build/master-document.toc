@@ -1,5 +1,5 @@
 \contentsline {chapter}{\numberline {1}Introduction of the Research}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Literature review}{2}{chapter.2}
+\contentsline {chapter}{\numberline {2}Literature review }{2}{chapter.2}
 \contentsline {section}{\numberline {2.1} Parse Tree}{2}{section.2.1}
 \contentsline {section}{\numberline {2.2} Named Entity Recognation and Classification NERC}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}Hidden Markov Model}{4}{section.2.3}
@@ -7,23 +7,24 @@
 \contentsline {subsection}{\numberline {2.4.1}\unskip \nobreakspace {}Linear Supporting Vector Machine .\nobreakspace {}}{5}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}\unskip \nobreakspace {}Non Linear data.\nobreakspace {}}{6}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Disadvantages of SVM}{7}{section.2.5}
-\contentsline {section}{\numberline {2.6}Some Terminologies}{8}{section.2.6}
-\contentsline {section}{\numberline {2.7}Text classification and Naive Bayes}{8}{section.2.7}
-\contentsline {section}{\numberline {2.8}Machine learning for Named Entities}{9}{section.2.8}
-\contentsline {chapter}{\numberline {3}Research Methodology}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Data and tools}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}Data Analysis and Filtering}{10}{section.3.2}
-\contentsline {section}{\numberline {3.3}Supervised vs Unsupervised Machine Learning}{10}{section.3.3}
-\contentsline {section}{\numberline {3.4}NLP Corpus}{11}{section.3.4}
-\contentsline {section}{\numberline {3.5}Extraction of Entities }{12}{section.3.5}
-\contentsline {section}{\numberline {3.6}Twenty Five First Lines Dataset }{13}{section.3.6}
-\contentsline {section}{\numberline {3.7}Stanford Named Entities Recognition}{13}{section.3.7}
-\contentsline {section}{\numberline {3.8}Natural Language ToolKit (NLTK)}{14}{section.3.8}
-\contentsline {section}{\numberline {3.9}Polyglot Named classifier}{15}{section.3.9}
-\contentsline {section}{\numberline {3.10}Sample Files}{16}{section.3.10}
-\contentsline {chapter}{\numberline {4}Results Discussion and Testing}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}General Overview}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Case Study Results}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Testing}{18}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusion and Future work}{20}{chapter.5}
-\contentsline {chapter}{References}{21}{chapter*.17}
+\contentsline {section}{\numberline {2.6}Some Terminologies}{7}{section.2.6}
+\contentsline {section}{\numberline {2.7}Text classification and Naive Bayes}{7}{section.2.7}
+\contentsline {section}{\numberline {2.8}Machine learning for Named Entities}{8}{section.2.8}
+\contentsline {chapter}{\numberline {3}Research Methodology}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Data and tools}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Data Analysis and Filtering}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Supervised vs Unsupervised Machine Learning}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}NLP Corpus}{10}{section.3.4}
+\contentsline {section}{\numberline {3.5}Modules and packages}{11}{section.3.5}
+\contentsline {section}{\numberline {3.6}Extraction of Entities }{13}{section.3.6}
+\contentsline {section}{\numberline {3.7}Top Section Dataset }{13}{section.3.7}
+\contentsline {section}{\numberline {3.8}Stanford Named Entities Recognition}{14}{section.3.8}
+\contentsline {section}{\numberline {3.9}Natural Language ToolKit (NLTK)}{15}{section.3.9}
+\contentsline {section}{\numberline {3.10}Polyglot Named classifier}{16}{section.3.10}
+\contentsline {section}{\numberline {3.11}Sample Files}{17}{section.3.11}
+\contentsline {chapter}{\numberline {4}Results Discussion and Testing}{18}{chapter.4}
+\contentsline {section}{\numberline {4.1}General Overview}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Case Study Results}{18}{section.4.2}
+\contentsline {section}{\numberline {4.3}Testing}{19}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusion and Future work}{21}{chapter.5}
+\contentsline {chapter}{References}{22}{chapter*.17}

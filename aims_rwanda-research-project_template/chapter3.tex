@@ -24,7 +24,7 @@ the data are unstructured, uncategorised and unclassified. The reports we have a
 \item clustering is a technique for analysing data by identifying hidden groups in a data set. The hidden groups helps the machine to  classify them data into small groups called "cluster" based on similarities or relationship found in data \citep{dy2004feature}.
 \end{itemize}
 Unsupervised Machine Learning is very important, the analysis of data require the machine to use its brain Supervised learning.
-\section{NLP Corpus}
+\section{NLP Corpus}\label{re}
 %Corpus is a set of large data which are structured and                                                                                                                                                                                                                   
 %\section{CORPUS}
 Corpus is a set of large data which are semi-structured.  To extract entities from corpus is simple than to deal with unstructured data. To get the corpus we filtered the data by using unicode of utf-8.
@@ -32,15 +32,13 @@ Corpus is a set of large data which are semi-structured.  To extract entities fr
 To get compatible data, we have to filter using the Unicode provides canonical and compatible equivalence.
 
 
-\textbf{Regular Expressions}: in Python, regular expression has operations and modules like "re.py" as so on. they are used to manipulate characters in strings. regular expressions use a backslash $(" \backslash  ")$  to indicate a special form without invoking the meaning of the special form. There are many regular expressions functions but some of what we used the most are :
+\textbf{Regular Expressions}: in Python, regular expression has operations and modules like "re.py" aND so on. they are used to manipulate characters in strings. regular expressions use a backslash $(" \backslash  ")$  to indicate a special form without invoking the meaning of the special form. There are many regular expressions functions but some of what we used the most are :
 \begin{itemize}
 \item re.split(): this function split par pattern and return the list of string.
 \item re.search(): it returns match objects.
 \item the match object ".end()": in a search string, it returns the end position of the match.
 \item the match object: in a search string, it returns the start position of the match.
 \end{itemize}
-
-\textbf{Python string Strip() method}: strip method helped us to remove unwanted characters from the beginning and end of the string. to indicate the position of the character to be stripped we use left(l.strip()) which removes the character at the beginning of a string or right(r.strip()) to remove the character at the end of the string.
 
 \textbf{ASCII} stands for American Standard Code for Information Interchange. it is uses numbers to represent text by using 128 characters. Computer uses ASCII exist within unicode for storing texts easily. All  ASCII uses unicode. ASCII characters are used to send and receive the e-mails, for text files and data conversions. 
 
@@ -68,6 +66,28 @@ Normally the StopWords return vast amount of unwanted information. Some example 
 
 Now we can check how for all of 1260 documents and count the Stop Words to be removed from vocabularies of corpus. We trained corpus by nltk package called FreqDist which uses  frequency distribution of each word occurs in corpus, then the module of nltk technique called "nltk.corpus.PlaintextCorpusReader" helped us to get total 58104 stop words over the whole  7796263  vocabularies.
 
+\section{Modules and packages}
+The procedure of extracting entities requires many linguistic packages. Machine learning algorithms check grammar rules, punctuation marks and syntaxes. For some    research eras ,  documents can have special characters such as emoticons for emotions. To install these package, you must understand clearly how they work and the content type of your documents. This is a list of packages we used for extracting IFRC entities.
+\begin{itemize}
+\item \textbf{os} : This module is  known as miscellaneous operating system interfaces. os represents the functionality of operating system with independent functions such as os.path.isfile(), os.path.exist, os.path.isdir, etc.  
+
+Its functions are important for building andependant platform. The programmes written  using os module  can execute in Windows and Linux regardless the machine operating system. 
+
+\item \textbf{nltk}: Natural Language Toolkit is one of core packages for linguistic modelling . With various important  built-in functions nltk is able to manipulate documents.  The main idea behind nltk is to use $nltk_{-}corpus$ to collect all documents as one dataset, then split the documents into sentences using $ne_{-}chunk$ and  remove the stopwords by  importing $stopword$ from $ntk.corpus$, lastly apply machine learning algorithms to extract entities.
+
+\item \textbf{PyPDF2} is able to extract specific information from a pdf document based on the section they belong to. This package locates top section, title, author, etc. It has many functions such as splitting documents pages, merge document pages, encrypt and decrypt documents and so on. It can be compared to pdftk
+\item \textbf{pandas} is an open source with high performance structure within various build in functions.
+Dataframe design for presenting many data in organized way. Pandas is powerfull in data analysis, flexible, fast and manipulation took for any language. In our research, We used pandas for making the frames of our data.
+\item \textbf{codecs} module  offers unicode string for encoding and decoding. codecs is used for handling errors and gives freedom to access internal registry. Codecs are not limited to text but mostly are for text encodings which is for encoding text to bytes. Additionally, there exits codecs for encoding text to text, some codecs can encode and decode at the same time.
+\item  \textbf{defaultdictionary} has basic content of difference between verbs, nouns, adjectives, adverbs etc. It uses tagger to assign each word composes the sentence a corresponding POS as explained in Chapter \ref{tree} classes of words are inverted by NLP, it refers to categories of words in dictionary.
+\item \textbf{Python String} module which returns a string with trailing text removed.  It has two methods to strip text on both sides, right strip() and left strip(). Trailling text can be  unwanted space, extension, punctuation marks, etc.
+
+To indicate the position of the character to be stripped we use left(l.strip()) which removes the character at the beginning of a string or right(r.strip()) to remove the character at the end of the string.
+\item \textbf{regular expressions } regex is a module which finds out the patterns between strings by setting rules for text. bytecodes compile those pattern rules and execute using matching rules.  example methods for re are explained into Chapter \ref{re}
+\item \textbf{polyglot} is used to extract entities from many languages.  It is multilanguage application supporter built as natular language pepeline.
+\item \textbf{Stanford} is one of most brilliant algorithms to extract entities from  documents corpus. it has classifier models, jar files which are free downloads. Stanford has many packages to handle linguistic problems. 
+\end{itemize}
+
 \section{Extraction of Entities }
 
 To extract entities we used default dictionary built in collection package of nltk. Our dataset now is a folder containing 1260 corpus files, we  used nltk chruncker to get sets of sentences of corpus. let have a look for our sample document the way sentences are split. 
@@ -80,7 +100,7 @@ To extract entities we used default dictionary built in collection package of nl
 
 Figure \ref{Set of sentences} shows the 45 first lines of the sample document. each each line is ended by  $'\backslash n'$. 
 
-\section{Twenty Five First Lines Dataset \label{top}}
+\section{Top Section Dataset \label{top}}
 
 From the analysis of IFRC pdf reports, most of them have a small table on the top. this table gives the image of what the report is talking about. This table summarizes what the document is talking about. For example the total amount of money spent in recovering a disease, the number of people who participated in a given activity, the location and so on.
 
@@ -106,19 +126,20 @@ We specified the named entities that we wanted to extract. We classified them in
 
 The reports from our corps are order by appeal numbers, the entities are in classified by nltk algorithm. 
 
-
+\newpage
 
 \begin{figure}[hbtp]
 \caption{IFRC entities from Stanford NER}
 \centering\includegraphics[scale =.45]{images/stanford.png} \label{stanford}
 \end{figure}
-From Figure \ref{stanford},  Consider the for the report "-Global MAA00029 21Jun2016.txt", locations row  shows that the report covered Syria,Irak, Afganistan, Libia,Ukraine, Yemen,etc.
+From Figure \ref{stanford},  Consider the for the report "-Global MAA00029 21Jun2016.txt", locations row  shows that the report covered Syria, Irak, Afganistan, Libia, Ukraine, Yemen, etc.
 The extraction of entities separates clearly the categories.
 \section{Natural Language ToolKit (NLTK)}
 Natural language toolkit is one of the algorithm to extract named  entities. It has different modules which are used to process the data alongside the extraction.
 NLTK chunkparser is a one of nltk module  which uses Regular expressions. NLTK tokenize which splits the sentences into small units called tokens. This module helps the NLTK tagger to identify words independently. 
 
 Generally NLTK classify the entities into four categories which are known as Location, Organization, Persons and Others. 
+\newpage
 
 \begin{figure}[hbtp]
 \caption{IFRC entities from NLTK}
@@ -131,15 +152,17 @@ From Figure \ref{nltkalgo}, Consider organizations extracted from the report "-G
 \section{Polyglot Named classifier}
 
 Compared to previous entities extractor, Polyglot has only three categories which are "Persons", "Locations" and "Organizations". For nltk, any entity which is classified into those three categories is not considered as named.
+\newpage
 
 \begin{figure}[hbtp]
 \caption{IFRC entities from Polyglot}
 \centering
 \includegraphics[scale=.45]{images/polyglot.png}\label{polyglot}
 \end{figure}
-
-
 Let us take an example report "-Global-MAA000029 21 Jun 2016.txt" from Figure \ref{polyglot}, the entities which are classified as "Persons" Jaime, Sepulveda and  Christoper Murray.
+
+
+
 
 \section{Sample Files} 
 The type of data we have can be considered into two different ways. There are some reports which are classified as CTP documents. This documents cover the overview of how IFRC money was invested in humanitarian activities.

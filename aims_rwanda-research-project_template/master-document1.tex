@@ -129,7 +129,7 @@
 % you write LASTNAME, Firstname.
 % Put your AIMS email address only please, for consistency,
 % not gmail or some other webmail address.
-\title{ Named entity extraction from disaster reports}
+\title{The Title}
 % Your name must be in CAPITAL with no comma, 
 % and the Family name comes last.
 \author{By\\ [1cm]
@@ -183,7 +183,7 @@ Alice Irankunda  (alice.irankunda@aims.ac.rw)\\
 %-----------------------------------------------------------------------------
 % See the acknowledgement.tex file and follow the instructions there.
 %\input{acknowledgement}
-\input{abstract}
+%\input{abstract}
 % Don't go typing out the contents.
 \tableofcontents
 \newpage
@@ -204,12 +204,17 @@ Alice Irankunda  (alice.irankunda@aims.ac.rw)\\
 % Chapter titles are just examples
 % Always have a question
 % Note the Case Pattern used at AIMS
-\input{chapter1} 
-\input{chapter2}  
-\input{chapter3}         
-\input{chapter4} 
+\input{chapter1} % Introduction is usually a chapter itself.
+\input{chapter2} % Chapters might go from 2. problem statement, 
+                 % through 3. model, to 4. analysis & results
+%\input{chapter7}% Chapters might go from 2. problem statement, 
+\input{chapter3} % You do not need to have exactly 4 chapters.
+                 % It is probably a good minimum, with 5 chapters 
+                 % average, and 7 chapters might be a maximum.
 
-\input{chapter5} 
+\input{chapter4} % Conclusion is usually a chapter itself. 
+\input{chapter5} % You may have more chapters. (Use e.g. git add FILE)
+% This is where we stop counting pages.
 % Acknowledgements and References are not counted.
 %-----------------------------------------------------------------------------
 % Note the errata page is not for now, it is for use during the examination.
@@ -225,4 +230,6 @@ Alice Irankunda  (alice.irankunda@aims.ac.rw)\\
 \bibliography{references}
 \addcontentsline{toc}{chapter}{References}
 %-----------------------------------------------------------------------------
+\end{document}
+
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.9.7)  28 MAY 2017 22:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.29)  29 MAY 2017 00:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,7 +788,7 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 182.
 
 
-<images/aimsrw_logo.png, id=112, 525.965pt x 96.36pt>
+<images/aimsrw_logo.png, id=116, 525.965pt x 96.36pt>
 File: images/aimsrw_logo.png Graphic file (type png)
 
 <use images/aimsrw_logo.png>
@@ -822,136 +822,136 @@ ame{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.1 \chapter
-            {Literature review} [1
+            {Literature review } [1
 
 ]
  2.
 [2
 
-] <images/nltk.png, id=187, 539.01375pt x 309.155pt>
+] <images/nltk.png, id=192, 539.01375pt x 309.155pt>
 File: images/nltk.png Graphic file (type png)
  <use images/nltk.png>
-Package pdftex.def Info: images/nltk.png used on input line 57.
+Package pdftex.def Info: images/nltk.png used on input line 44.
 (pdftex.def)             Requested size: 377.30704pt x 216.40701pt.
 
-Overfull \hbox (23.40591pt too wide) in paragraph at lines 64--67
+Overfull \hbox (23.40591pt too wide) in paragraph at lines 51--54
 \OT1/cmss/m/n/12 The term "Named en-tity" has been coined in 1996 in "sixth Mes
 -sage un-der-stand-ing Conference"(MUC-
  []
 
 [3 <./images/nltk.png>] [4] [5]
-<images/linear.png, id=222, 742.775pt x 569.12625pt>
+<images/linear.png, id=227, 742.775pt x 569.12625pt>
 File: images/linear.png Graphic file (type png)
  <use images/linear.png>
-Package pdftex.def Info: images/linear.png used on input line 132.
+Package pdftex.def Info: images/linear.png used on input line 119.
 (pdftex.def)             Requested size: 222.83421pt x 170.73918pt.
 
-<images/multi.png, id=224, 433.62pt x 311.1625pt>
+<images/multi.png, id=229, 433.62pt x 311.1625pt>
 File: images/multi.png Graphic file (type png)
  <use images/multi.png>
-Package pdftex.def Info: images/multi.png used on input line 136.
+Package pdftex.def Info: images/multi.png used on input line 123.
 (pdftex.def)             Requested size: 260.17401pt x 186.69894pt.
 
-Overfull \hbox (281.85585pt too wide) in paragraph at lines 131--140
+Overfull \hbox (281.85585pt too wide) in paragraph at lines 118--127
 []$[]$$[]$ 
  []
 
-<images/SVMNL.png, id=226, 578.16pt x 284.06125pt>
+<images/SVMNL.png, id=231, 578.16pt x 284.06125pt>
 File: images/SVMNL.png Graphic file (type png)
  <use images/SVMNL.png>
-Package pdftex.def Info: images/SVMNL.png used on input line 194.
+Package pdftex.def Info: images/SVMNL.png used on input line 137.
 (pdftex.def)             Requested size: 404.70924pt x 198.84149pt.
 
-[6 <./images/linear.png> <./images/multi.png> <./images/SVMNL.png>] [7]
+[6 <./images/linear.png> <./images/multi.png> <./images/SVMNL.png>]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <12> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 204.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 145.
 
 
-[8] <images/report.png, id=257, 972.63374pt x 154.5775pt>
+[7] <images/report.png, id=258, 972.63374pt x 154.5775pt>
 File: images/report.png Graphic file (type png)
 
 <use images/report.png>
-Package pdftex.def Info: images/report.png used on input line 232.
+Package pdftex.def Info: images/report.png used on input line 173.
 (pdftex.def)             Requested size: 389.0466pt x 61.8299pt.
-) (./chapter3.tex [9 <./images/report.png>]
+) (./chapter3.tex [8 <./images/report.png>]
  3.
-[10
+[9
 
-] [11] <images/ASCII.png, id=275, 712.6625pt x 474.77374pt>
+] [10] <images/ASCII.png, id=276, 712.6625pt x 474.77374pt>
 File: images/ASCII.png Graphic file (type png)
 
 <use images/ASCII.png>
-Package pdftex.def Info: images/ASCII.png used on input line 56.
+Package pdftex.def Info: images/ASCII.png used on input line 54.
 (pdftex.def)             Requested size: 356.33038pt x 237.38629pt.
- <images/corpus.png, id=277, 1084.05pt x 609.27625pt>
+ [11 <./images/ASCII.png>] [12]
+<images/corpus.png, id=289, 1084.05pt x 609.27625pt>
 File: images/corpus.png Graphic file (type png)
-
-<use images/corpus.png>
-Package pdftex.def Info: images/corpus.png used on input line 77.
+ <use images/corpus.png>
+Package pdftex.def Info: images/corpus.png used on input line 97.
 (pdftex.def)             Requested size: 433.61232pt x 243.70618pt.
- [12 <./images/ASCII.png>] [13 <./images/corpus.png>]
-<images/stanford.png, id=289, 1011.78pt x 562.1pt>
+
+[13 <./images/corpus.png>] [14]
+<images/stanford.png, id=301, 1011.78pt x 562.1pt>
 File: images/stanford.png Graphic file (type png)
  <use images/stanford.png>
-Package pdftex.def Info: images/stanford.png used on input line 113.
+Package pdftex.def Info: images/stanford.png used on input line 133.
 (pdftex.def)             Requested size: 455.2968pt x 252.94266pt.
 
-[14 <./images/stanford.png>]
-<images/nltkalgo.png, id=297, 1030.85126pt x 559.08875pt>
+[15 <./images/stanford.png>]
+<images/nltkalgo.png, id=309, 1030.85126pt x 559.08875pt>
 File: images/nltkalgo.png Graphic file (type png)
 
 <use images/nltkalgo.png>
-Package pdftex.def Info: images/nltkalgo.png used on input line 126.
+Package pdftex.def Info: images/nltkalgo.png used on input line 147.
 (pdftex.def)             Requested size: 463.87878pt x 251.5876pt.
-
-<images/polyglot.png, id=299, 1013.7875pt x 486.81876pt>
+ [16 <./images/nltkalgo.png>]
+<images/polyglot.png, id=316, 1013.7875pt x 486.81876pt>
 File: images/polyglot.png Graphic file (type png)
 
 <use images/polyglot.png>
-Package pdftex.def Info: images/polyglot.png used on input line 138.
+Package pdftex.def Info: images/polyglot.png used on input line 160.
 (pdftex.def)             Requested size: 456.20016pt x 219.0664pt.
- [15 <./images/nltkalgo.png>]) (./chapter4.tex
-[16 <./images/polyglot.png>]
+) (./chapter4.tex [17 <./images/polyglot.png>]
  4.
-[17
+[18
 
-] <images/json.png, id=318, 636.3775pt x 139.52126pt>
+] <images/json.png, id=329, 636.3775pt x 139.52126pt>
 File: images/json.png Graphic file (type png)
  <use images/json.png>
 Package pdftex.def Info: images/json.png used on input line 42.
 (pdftex.def)             Requested size: 445.46121pt x 97.6642pt.
 
-[18 <./images/json.png>]
-<images/BothNames.png, id=326, 387.4475pt x 69.25874pt>
+[19 <./images/json.png>]
+<images/BothNames.png, id=337, 387.4475pt x 69.25874pt>
 File: images/BothNames.png Graphic file (type png)
 
 <use images/BothNames.png>
 Package pdftex.def Info: images/BothNames.png used on input line 50.
 (pdftex.def)             Requested size: 271.2114pt x 48.48077pt.
 
-<images/comparason.png, id=328, 580.1675pt x 120.45pt>
+<images/comparason.png, id=339, 580.1675pt x 120.45pt>
 File: images/comparason.png Graphic file (type png)
 
 <use images/comparason.png>
 Package pdftex.def Info: images/comparason.png used on input line 59.
 (pdftex.def)             Requested size: 464.13461pt x 96.3601pt.
 
-<images/precision.png, id=330, 396.48125pt x 91.34125pt>
+<images/precision.png, id=341, 396.48125pt x 91.34125pt>
 File: images/precision.png Graphic file (type png)
 
 <use images/precision.png>
 Package pdftex.def Info: images/precision.png used on input line 77.
 (pdftex.def)             Requested size: 396.48027pt x 91.34102pt.
-) (./chapter5.tex [19 <./images/BothNames.png> <./images/comparason.png> <./ima
+) (./chapter5.tex [20 <./images/BothNames.png> <./images/comparason.png> <./ima
 ges/precision.png>]
  5.
-) (./master-document.bbl [20
+) (./master-document.bbl [21
 
 ])
 *********************************************************************
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 228.
-[21
+[22
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 228.
@@ -967,13 +967,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 228.
  ) 
 Here is how much of TeX's memory you used:
- 10691 strings out of 494383
- 156243 string characters out of 6163744
- 256216 words of memory out of 5000000
- 13665 multiletter control sequences out of 15000+600000
+ 10696 strings out of 494383
+ 156286 string characters out of 6163743
+ 256316 words of memory out of 5000000
+ 13668 multiletter control sequences out of 15000+600000
  15549 words of font info for 62 fonts, out of 8000000 for 9000
  372 hyphenation exceptions out of 8191
- 36i,10n,38p,661b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,38p,852b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -987,10 +987,10 @@ s/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss
 i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on build/master-document.pdf (25 pages, 845839 bytes).
+Output written on build/master-document.pdf (26 pages, 854060 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 353 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 292 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 363 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 300 words of extra memory for PDF output out of 10000 (max. 10000000)
 

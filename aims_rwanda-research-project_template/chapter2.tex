@@ -1,4 +1,4 @@
-\chapter{Literature review}
+\chapter{Literature review }
 In today's life, many organizations are generating unstructured data while they are communicating. There are plenty of entities to be extracted. In this research,  all reports we considered are written in English.
 
 %\Jnote{This is not good english, you can write
@@ -15,7 +15,7 @@ This research will also look at how neural networks can be used to label differe
 Capitalization can be used in different ways such as the beginning of the proper noun, the abbreviation, the post of high level profile people etc. Considering the English language text, if we are given a  particular token it is not by chance  to  determine whether it is a name or not. Some of the approaches to indicate a name are to  use capitalization, detection of sentence boundaries and dictionaries \citep{baluja2000applying}.
 
 %\Jnote{Consider putting text above into separate section (preprocessing for NLP).} 
-\section{ Parse  Tree}
+\section{ Parse  Tree} \label{tree}
 One of the sentences that compose our sample report says: 
 "Assessment reports indicated 117 deaths, 544 people injured, 12,794 homes damaged and 7,384 houses destroyed", Suppose that this sentence is called "S"
 
@@ -38,19 +38,6 @@ The meanings of the used tags for S:
 \end{itemize}
 %\Jnote{Can you give a citation for this method?}
 The parse tree is formed based on the POS, the classification of word and the way words are arranged in a sentence show a kind of relationship between words.
-%\begin{figure}[hbtp]
-%\caption{The parse of the above sentence}
-%\centering
-%\includegraphics[scale=1]{images/parse.png}
-%\end{figure}
-%%\Jnote{The figure is too small to read it.}
-
-
-%The process of classifying entities can be explained more in the following picture
-%\Jnote{s/more explained/better explained}
-%\Jnote{Is this figure taken from somewhere? If yes, you have to
- % provide source. Also, I don't think it is acceptable at all to copy pictures in a research essay. Consult this with Yabebal, maybe he allows it.}
-
 \begin{figure}[hbtp]
 \caption{Relations extraction from }
 \centering
@@ -139,55 +126,11 @@ The main idea behind SVM modelling is to work with features and find the hyperpl
         \end{subfigure}
 
 \end{figure}
-For linear sample data, it is simple to plot the hyperplane to handle the separation.  Data are spread separately between positive documents and negative documents. The way data are represented SVM decided  whether to use linear modelling or not. 
+For linear sample data, it is simple to plot the hyperplane to handle the separation.  Data are spread separately between positive documents and negative documents. The way data are represented SVM decided  whether to use linear modelling or not. IFRC reports are considered as multi dimensional documents.
 
 \subsection{Non Linear data} 
 Sometimes the representation of data is quite mixed way so that you cant plot hyperplane easily. When the hyperplane can not be plotted as a straight line,  SVM has a function to linearise non linear data.  When the data are not linear, SVM has a way to linearise them by using a function. $ \phi$ maps data to the higher dimensional space. Straightforwardly, the classification became linear. Figure \ref{SVMNL} shows the way a function $ \phi$ linearised the data.
 
-IFRC reports are considered as multi dimensional documents.
-%\Jnote{You will have many dimensions, not just two}
-%Hyperplane is for separating train documents based on their categories and "w" is a weight vector  which is perpendicular to hyperplane is represented by the following equation: 
-%\begin{align}
-%w.x- b = 0 \label{2.0.7}
-%\end{align}
-%\begin{figure}[hbtp]
-%\caption{SVM in hyperplane representation}
-%\centering
-%\includegraphics[scale=.7]{images/svm.png}
-%\end{figure}
-
- 
-
-%From the \eqref{2.0.7}, the offset of the hyperplane is $ \frac{b}{\parallel  w \parallel} $
-%
-%The target is to maximize the the margin between the the points which represent two categories. Remember that the vectors which pass through each of the point representative is perpendicular to the w, suppose that there will be an imaginary line which join two borders points $ h_{-}$ and $ h_{+}$.
-%%\Jnote{I didn't understand this explanation.}
-%Supporting vectors which are demonstrated by the dashed lines on the figure above  are formed by :
-%\begin{align}
-%w.x- b & = 1 \label{2.0.8} \quad \quad \quad  \text{and also } \\
-%w.x- b & = -1 \label{2.0.9}
-%\end{align}
-%There are many algorithms with different approaches to optimization problems but all tends to the same solution says that minimize $\textbackslash\textbar{ w} \textbackslash$ automatically maximize the margin between $ h_{-}$ and $ h_{+}$ where the boundary is a half way.
-%===============
-%\section{Big data and Machine learning}
-%The natural language processing is not enough to handle the sophistication and ubiquity of textual data reason why deep learning using machine learning techniques has been introduced.
-%Text analysis using machine learning follow these steps:
-%
-%\begin{itemize}
-%\item  NLP For short
-%\item Lemmatization
-%\item NER
-%\item POS 
-
-%\end{itemize}
-%\Jnote{Don't use \textbackslash parallel for norm, instead use \textbackslash\textbar}
-%===============
-%Now,add another constraint for each document category from the equations \eqref{2.0.8} and \eqref{2.0.9}, in order to hit the target
-%\begin{align}
-%w.x- b & \geq     1 \label{2.0.8} \quad \quad \quad  \text{and also } \\
-%w.x- b & \leq -1 \label{2.0.9}
-%\end{align}
-%\Jnote{Again, I didn't really understand this part.}
 \begin{figure}[hbtp]
 \caption{Nonlinear SVM classification}
 \centering
@@ -196,8 +139,6 @@ IFRC reports are considered as multi dimensional documents.
  
 \section{Disadvantages of SVM} 
 The classification of particular documents is not easy to be performed by SVM without destroying the constructed weights  but with hand-written rule model. Machine learning uses decision tree procedure than SVM. In addition the decision tree has a detailed boolean-like  model which is more popular to user.
-
-\newpage
 
 \section{Some Terminologies}
 
